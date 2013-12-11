@@ -3,3 +3,6 @@
 node_modules/
 dist/
 src/assets/js/scripts.js
+src/assets/css/
+src/assets/img/sprite/standard-*
+src/assets/img/sprite/retina-*
