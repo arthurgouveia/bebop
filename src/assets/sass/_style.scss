@@ -12,13 +12,13 @@
     @include box-sizing(border-box);
 }
 
-
 /*
  * Here's an example of how to use sprites with Compass and how to use the
  * function to convert to PX to REM with fallbacks
  */
 .bebop {
     @include sprite-dimensions($sprite, 'bebop');
+    @include hide-text(left);
     position: fixed;
     top: 50%;
     left: 50%;
