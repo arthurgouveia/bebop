@@ -52,21 +52,7 @@ If you don't have JPEGMini and you want to use grunt-contrib-imagemin to optimiz
 
 ##Instalation and usage
 
-###Yeoman Generator
-
-Install the Yeoman Generator for Bebop:
-
-```shell
-  npm install -g generator-bebop
-```
-
-Create a folder to your application and run the generator:
-
-```shell
-  yo bebop
-```
-
-###Grunt
+###Using Grunt
 
 Install the Grunt tasks devDependencies:
 
@@ -89,6 +75,24 @@ If you want to generate the deploy version, run:
 ```
 
 It will create a dist folder only the with the files you need to deploy: concatenated and uglyfied JavaScript files, along with minified CSS and optimized imagery.
+
+###Using Yeoman Generator
+
+Install the Yeoman Generator for Bebop:
+
+```shell
+    npm install -g generator-bebop
+```
+
+Create a folder to your application and run the generator:
+
+```shell
+    yo bebop
+```
+
+ps.: Thanks, [Sérgio Vilar](https://github.com/sergiovilar), for this implementation :)
+
+###Walkthrough
 
 ####Sass files
 
