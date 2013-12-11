@@ -1,4 +1,8 @@
-#WTF is Bebop
+#Bebop - Easy kickstart for websites/apps with Grunt, Compass & H5B
+
+<img align="right" height="260" src="http://bebop.bracketarmy.com.svg">
+
+##WTF is Bebop
 
 Bebop is a HTML5 and CSS3 boilerplate built on top of [HTML5 Boilerplate](http://html5boilerplate.com/) with the aid of [Compass](http://compass-style.org) and [Grunt](http://gruntjs.com/) to kickstart and optimize the dev flow of simple websites and apps. It also brings together concerns about semantics and accessibility, so there's a simple yet helpful index file with a few WAI-ARIA roles and markup to help you start learning.
 
