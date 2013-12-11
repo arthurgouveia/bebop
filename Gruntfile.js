@@ -16,7 +16,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON( 'package.json' ),
 
     clean: {
-      build: ['dist'],
+      build: 'dist',
       release: [
         'dist/<%= dirs.sass %>',
         'dist/<%= dirs.js %>/main.js',

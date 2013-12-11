@@ -1,6 +1,6 @@
 #Bebop: Kickstart for websites and apps
 
-<img align="right" height="260" src="http://bebop.bracketarmy.com/bebop.svg">
+<img align="right" height="260" src="http://bebop.bracketarmy.com/bebop.svg" alt="I'm Bebop, bitch!">
 
 ###WTF is Bebop
 
@@ -108,3 +108,4 @@ Your images should the thrown inside the **src/assets/img** folder. Inside this 
 + Deploy actions through Git and SFTP;
 + Find a better alternative for grunt-contrib-imagemin;
 + Create a fucking gh-pages repo with decent design and awesome documentation;
++ Add some bower implementation to increase time of up-to-date resources;
