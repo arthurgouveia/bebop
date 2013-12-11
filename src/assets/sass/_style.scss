@@ -1,0 +1,40 @@
+*,
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+/*  
+    Here's an example of how to use sprites with Compass and how to use the
+    function to convert to PX to REM with fallbacks
+*/
+.bebop {
+    @include sprite-dimensions($sprite, 'bebop');
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: u(-178 0 0 -138.5);
+    background-image: $sprite;
+    background-position: sprite-position($sprite, 'bebop');
+}
+
+/*  
+    Since the retina sprite has 2x the size of the standard retina,
+    simply get the selectors that use the sprite, change the background image,
+    and set it's size to the size of the original sprite.
+ */
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+    $sprite-path: sprite-path($sprite);
+    $sprite-height: image-height($sprite-path);
+    $sprite-width: image-width($sprite-path);
+
+    .bebop {
+        background-image: $sprite-retina;
+        background-size: $sprite-width $sprite-height;
+    }
+}
