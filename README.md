@@ -92,7 +92,7 @@ Create a folder to your application and run the generator:
 
 ps.: Thanks, [Sérgio Vilar](https://github.com/sergiovilar), for this implementation :)
 
-###Walkthrough
+##Walkthrough
 
 ####Sass files
 
