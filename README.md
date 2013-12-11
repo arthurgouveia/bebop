@@ -1,4 +1,4 @@
-#Bebop - Kickstart for websites and apps
+#Bebop: Kickstart for websites and apps
 
 <img align="right" height="260" src="http://bebop.bracketarmy.com/bebop.svg">
 
