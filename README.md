@@ -108,7 +108,7 @@ The folder **partials/h5bp** contains the CSS from HTML5 Boilerplate, split betw
 
 ####JavaScript files
 
-Inside **src/assets/js** you'll find a folder named **vendor**. It holds for you the jQuery 1.10.2 and Modernizr 2.7.0 minified version of these libs.
+Inside **src/assets/js** you'll find a folder named **vendor**. It holds for you the jQuery 1.10.2 and Modernizr 2.7.1 minified version of these libs.
 
 **main.js** should be used for your general JavaScript'ing.
 
