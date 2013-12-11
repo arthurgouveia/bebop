@@ -52,6 +52,20 @@ If you don't have JPEGMini and you want to use grunt-contrib-imagemin to optimiz
 
 ##Instalation and usage
 
+###Yeoman Generator
+
+Install the Yeoman Generator for Bebop:
+
+```shell
+  npm install -g generator-bebop
+```
+
+Create a folder to your application and run the generator:
+
+```shell
+  yo bebop
+```
+
 ###Grunt
 
 Install the Grunt tasks devDependencies:
