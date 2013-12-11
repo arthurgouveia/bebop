@@ -100,11 +100,11 @@ Inside **src/assets/sass** you'll find a series of files. The one you'll be deal
 
 Your main Sass files are **main.scss** and **main-ie.scss** but maintaining two files just to work with REM would be a pain, so those two files only import everything you need.
 
-You should only need to work with **_style.scss**, **_variables.scss** and **_functions.scss**, along with any other partials you might want to create to organize your stylesheets. Just import them on **_style.scss**.
+You should only need to work with **_style.scss**, **partials/_variables.scss** and **partials/_functions.scss**, along with any other partials you might want to create to organize your stylesheets. Just import them on **_style.scss**.
 
 Sprites are configured out-of-the-box. Jump into **_style.scss** to check out how to make use of this goodness.
 
-The folder **h5b** contains the CSS from HTML5 Boilerplate, split between files and imported inside **main.scss** and **main-ie.scss***
+The folder **partials/h5bp** contains the CSS from HTML5 Boilerplate, split between files and imported inside **_style.scss**.
 
 ####JavaScript files
 
