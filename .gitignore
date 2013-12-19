@@ -2,6 +2,7 @@
 .sass-cache/
 node_modules/
 dist/
+src/assets/js/vendor
 src/assets/js/scripts.js
 src/assets/css/
 src/assets/img/sprite/standard-*
