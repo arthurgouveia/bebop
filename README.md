@@ -4,7 +4,7 @@
 
 ###WTF is Bebop
 
-Bebop is a HTML5 and CSS3 boilerplate built on top of [HTML5 Boilerplate](http://html5boilerplate.com/) with the aid of [Compass](http://compass-style.org) and [Grunt](http://gruntjs.com/) to kickstart and optimize the dev flow of simple websites and apps. It also brings together concerns about semantics and accessibility, so there's a simple yet helpful index file with a few WAI-ARIA roles and markup to help you start learning.
+Bebop is a HTML5 and CSS3 boilerplate built on top of [HTML5 Boilerplate](http://html5boilerplate.com/) with the aid of [Compass](http://compass-style.org), [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/) to kickstart and optimize the dev flow of simple websites and apps. It also brings together concerns about semantics and accessibility, so there's a simple yet helpful index file with a few WAI-ARIA roles and markup to help you start learning.
 
 Talking Stylesheets, you'll notice the conditionals for lt IE9 and gt IE8. The way this project works is that it generates two separate CSS files, one using REM units and another one using PX, for legacy browsers, but you only need to maintain one single file. This is completely inspired by [Sébastien Axinté](http://twitter.com/SebastienAxinte)'s [REM to PX Browser Function](http://davidwalsh.name/rem-px-browser-function-sass) post. Check it out.
 
@@ -14,7 +14,7 @@ Aside from that, [Bebop](http://en.wikipedia.org/wiki/Bebop_and_Rocksteady) is a
 
 ##Requirements
 
-[Install Grunt](http://gruntjs.com/getting-started), [Sass](http://sass-lang.com/install) and [Compass](http://compass-style.org/install/).
+Install [Sass](http://sass-lang.com/install), [Compass](http://compass-style.org/install/), [Grunt](http://gruntjs.com/getting-started) and [Bower](http://bower.io/).
 
 ###Linux and Windows users
 
@@ -58,6 +58,12 @@ Install the Grunt tasks devDependencies:
 
 ```shell
     npm install
+```
+
+Install the Bower packages:
+
+```shell
+    bower install
 ```
 
 If you're on development, simply do:
