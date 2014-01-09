@@ -16,13 +16,15 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON( 'package.json' ),
 
     clean: {
-      build: 'dist',
+      dist: 'dist',
+      sprite: [
+        'dist/<%= dirs.img %>/sprite/retina',
+        'dist/<%= dirs.img %>/sprite/standard'
+      ],
       release: [
         'dist/<%= dirs.sass %>',
         'dist/<%= dirs.js %>/main.js',
-        'dist/<%= dirs.js %>/plugins.js',
-        'dist/<%= dirs.img %>/sprite/retina',
-        'dist/<%= dirs.img %>/sprite/standard',
+        'dist/<%= dirs.js %>/plugins.js'
       ]
     },
 
@@ -161,28 +163,29 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'dist/<%= dirs.img %>',
-          src: ['*.{png,jpg,gif}'],
+          src: ['**/*.{png,jpg,gif}'],
           dest: 'dist/<%= dirs.img %>'
         }]
       }
     },
 
     // imageoptim: {
+    //   options: {
+    //     quitAfter: true
+    //   },
     //   png: {
     //     options: {
     //       jpegMini: false,
-    //       imageAlpha: true,
-    //       quitAfter: true
+    //       imageAlpha: true
     //     },
     //     src: ['dist/<%= dirs.img %>/**/*.png']
     //   },
     //   jpg: {
     //     options: {
     //       jpegMini: true,
-    //       imageAlpha: false,
-    //       quitAfter: true
+    //       imageAlpha: false
     //     },
-    //     src: ['dist/<%= dirs.img %>']
+    //     src: ['dist/<%= dirs.img %>/**/*.jpg']
     //   }
     // },
 
@@ -203,10 +206,11 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['connect', 'watch']);
 
   grunt.registerTask('build', [
-    'clean:build',
+    'clean:dist',
     'copy',
     'compass:dist',
     'csscomb:dist',
+    'clean:sprite',
     'imagemin',
     // 'imageoptim',
     'concat',
