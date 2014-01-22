@@ -17,15 +17,14 @@
  * function to convert to PX to REM with fallbacks
  */
 .bebop {
-    @include sprite-dimensions($sprite, 'bebop');
     @include hide-text(left);
+    @include sprite($sprite, bebop, true); // This will include the bg position and, if true is passed, height + width
+    background: $sprite;
     position: fixed;
     top: 50%;
     left: 50%;
     display: block;
     margin: u(-178 0 0 -138.5);
-    background-image: $sprite;
-    background-position: sprite-position($sprite, 'bebop');
 }
 
 /*

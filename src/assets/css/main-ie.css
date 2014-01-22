@@ -1,0 +1,712 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../sass/partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary{
+  display:block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../sass/partials/_normalize.scss */
+audio,
+canvas,
+video{
+  display:inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../sass/partials/_normalize.scss */
+audio:not([controls]){
+  display:none;
+  height:0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 52, ../sass/partials/_normalize.scss */
+[hidden],
+template{
+  display:none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 66, ../sass/partials/_normalize.scss */
+html{
+  font-family:sans-serif;
+  /* 1 */
+  -ms-text-size-adjust:100%;
+  /* 2 */
+  -webkit-text-size-adjust:100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 76, ../sass/partials/_normalize.scss */
+body{
+  margin:0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 88, ../sass/partials/_normalize.scss */
+a{
+  background:transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 96, ../sass/partials/_normalize.scss */
+a:focus{
+  outline:thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 105, ../sass/partials/_normalize.scss */
+a:active,
+a:hover{
+  outline:0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 118, ../sass/partials/_normalize.scss */
+h1{
+  font-size:2em;
+  margin:0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 127, ../sass/partials/_normalize.scss */
+abbr[title]{
+  border-bottom:1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 136, ../sass/partials/_normalize.scss */
+b,
+strong{
+  font-weight:bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 144, ../sass/partials/_normalize.scss */
+dfn{
+  font-style:italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 152, ../sass/partials/_normalize.scss */
+hr{
+  -moz-box-sizing:content-box;
+  box-sizing:content-box;
+  height:0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 162, ../sass/partials/_normalize.scss */
+mark{
+  background:#ff0;
+  color:#000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 174, ../sass/partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp{
+  font-family:monospace, serif;
+  font-size:1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 183, ../sass/partials/_normalize.scss */
+pre{
+  white-space:pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 191, ../sass/partials/_normalize.scss */
+q{
+  quotes:"\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 199, ../sass/partials/_normalize.scss */
+small{
+  font-size:80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 208, ../sass/partials/_normalize.scss */
+sub,
+sup{
+  font-size:75%;
+  line-height:0;
+  position:relative;
+  vertical-align:baseline;
+}
+
+/* line 215, ../sass/partials/_normalize.scss */
+sup{
+  top:-0.5em;
+}
+
+/* line 219, ../sass/partials/_normalize.scss */
+sub{
+  bottom:-0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 231, ../sass/partials/_normalize.scss */
+img{
+  border:0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 239, ../sass/partials/_normalize.scss */
+svg:not(:root){
+  overflow:hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 251, ../sass/partials/_normalize.scss */
+figure{
+  margin:0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 263, ../sass/partials/_normalize.scss */
+fieldset{
+  border:1px solid #c0c0c0;
+  margin:0 2px;
+  padding:0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 274, ../sass/partials/_normalize.scss */
+legend{
+  border:0;
+  /* 1 */
+  padding:0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 288, ../sass/partials/_normalize.scss */
+button,
+input,
+select,
+textarea{
+  font-family:inherit;
+  /* 1 */
+  font-size:100%;
+  /* 2 */
+  margin:0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 300, ../sass/partials/_normalize.scss */
+button,
+input{
+  line-height:normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 312, ../sass/partials/_normalize.scss */
+button,
+select{
+  text-transform:none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 327, ../sass/partials/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+  -webkit-appearance:button;
+  /* 2 */
+  cursor:pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 337, ../sass/partials/_normalize.scss */
+button[disabled],
+html input[disabled]{
+  cursor:default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 347, ../sass/partials/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"]{
+  box-sizing:border-box;
+  /* 1 */
+  padding:0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 358, ../sass/partials/_normalize.scss */
+input[type="search"]{
+  -webkit-appearance:textfield;
+  /* 1 */
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  /* 2 */
+  box-sizing:content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 371, ../sass/partials/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration{
+  -webkit-appearance:none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 380, ../sass/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner{
+  border:0;
+  padding:0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 390, ../sass/partials/_normalize.scss */
+textarea{
+  overflow:auto;
+  /* 1 */
+  vertical-align:top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 403, ../sass/partials/_normalize.scss */
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 17, ../sass/partials/h5bp/_base.scss */
+html,
+button,
+input,
+select,
+textarea{
+  color:#222;
+}
+
+/* line 21, ../sass/partials/h5bp/_base.scss */
+html{
+  font-size:1em;
+  line-height:1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 32, ../sass/partials/h5bp/_base.scss */
+::-moz-selection{
+  background:#b3d4fc;
+  text-shadow:none;
+}
+
+/* line 37, ../sass/partials/h5bp/_base.scss */
+::selection{
+  background:#b3d4fc;
+  text-shadow:none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 46, ../sass/partials/h5bp/_base.scss */
+hr{
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #ccc;
+  margin:1em 0;
+  padding:0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 64, ../sass/partials/h5bp/_base.scss */
+audio,
+canvas,
+img,
+svg,
+video{
+  vertical-align:middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 72, ../sass/partials/h5bp/_base.scss */
+fieldset{
+  border:0;
+  margin:0;
+  padding:0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 82, ../sass/partials/h5bp/_base.scss */
+textarea{
+  resize:vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 90, ../sass/partials/h5bp/_base.scss */
+.browsehappy{
+  margin:0.2em 0;
+  background:#ccc;
+  color:#000;
+  padding:0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 11, ../sass/_style.scss */
+*,
+*:before,
+*:after{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+/*
+ * Here's an example of how to use sprites with Compass and how to use the
+ * function to convert to PX to REM with fallbacks
+ */
+/* line 19, ../sass/_style.scss */
+.bebop{
+  text-indent:-119988px;
+  overflow:hidden;
+  text-align:left;
+  background-position:0 0;
+  height:356px;
+  width:277px;
+  background:url('../img/sprite/standard-secc8af8802.png');
+  position:fixed;
+  top:50%;
+  left:50%;
+  display:block;
+  margin:-178px 0px 0px -138.5px;
+}
+
+/*
+ * Since the retina sprite has 2x the size of the standard retina,
+ * simply get the selectors that use the sprite, change the background image,
+ * and set it's size to the size of the original sprite.
+ */
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+  /* line 44, ../sass/_style.scss */
+  .bebop{
+    background-image:url('../img/sprite/retina-s4dc08c41d0.png');
+    background-size:277px 356px;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 9, ../sass/partials/h5bp/_helpers.scss */
+.hidden{
+  display:none !important;
+  visibility:hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 18, ../sass/partials/h5bp/_helpers.scss */
+.visuallyhidden{
+  border:0;
+  clip:rect(0 0 0 0);
+  height:1px;
+  margin:-1px;
+  overflow:hidden;
+  padding:0;
+  position:absolute;
+  width:1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 35, ../sass/partials/h5bp/_helpers.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus{
+  clip:auto;
+  height:auto;
+  margin:0;
+  overflow:visible;
+  position:static;
+  width:auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 48, ../sass/partials/h5bp/_helpers.scss */
+.invisible{
+  visibility:hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 65, ../sass/partials/h5bp/_helpers.scss */
+.clearfix:before,
+.clearfix:after{
+  content:" ";
+  /* 1 */
+  display:table;
+  /* 2 */
+}
+
+/* line 70, ../sass/partials/h5bp/_helpers.scss */
+.clearfix:after{
+  clear:both;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print{
+  /* line 80, ../sass/partials/h5bp/_helpers.scss */
+  *{
+    background:transparent !important;
+    color:#000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow:none !important;
+    text-shadow:none !important;
+  }
+
+  /* line 88, ../sass/partials/h5bp/_helpers.scss */
+  a,
+  a:visited{
+    text-decoration:underline;
+  }
+
+  /* line 92, ../sass/partials/h5bp/_helpers.scss */
+  a[href]:after{
+    content:" (" attr(href) ")";
+  }
+
+  /* line 96, ../sass/partials/h5bp/_helpers.scss */
+  abbr[title]:after{
+    content:" (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 105, ../sass/partials/h5bp/_helpers.scss */
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after{
+    content:"";
+  }
+
+  /* line 110, ../sass/partials/h5bp/_helpers.scss */
+  pre,
+  blockquote{
+    border:1px solid #999;
+    page-break-inside:avoid;
+  }
+
+  /* line 115, ../sass/partials/h5bp/_helpers.scss */
+  thead{
+    display:table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 120, ../sass/partials/h5bp/_helpers.scss */
+  tr,
+  img{
+    page-break-inside:avoid;
+  }
+
+  /* line 124, ../sass/partials/h5bp/_helpers.scss */
+  img{
+    max-width:100% !important;
+  }
+
+  @page {
+    margin:0.5cm;
+}
+
+  /* line 134, ../sass/partials/h5bp/_helpers.scss */
+  p,
+  h2,
+  h3{
+    orphans:3;
+    widows:3;
+  }
+
+  /* line 140, ../sass/partials/h5bp/_helpers.scss */
+  h2,
+  h3{
+    page-break-after:avoid;
+  }
+}
