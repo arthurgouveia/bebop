@@ -19,7 +19,7 @@
 .bebop {
     @include hide-text(left);
     @include sprite($sprite, bebop, true); // This will include the bg position and, if true is passed, height + width
-    background: $sprite;
+    background-image: $sprite;
     position: fixed;
     top: 50%;
     left: 50%;

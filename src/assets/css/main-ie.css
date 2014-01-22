@@ -534,7 +534,7 @@ textarea{
   background-position:0 0;
   height:356px;
   width:277px;
-  background:url('../img/sprite/standard-secc8af8802.png');
+  background-image:url('../img/sprite/standard-secc8af8802.png');
   position:fixed;
   top:50%;
   left:50%;
