@@ -28,9 +28,9 @@
 }
 
 /*
- * Since the retina sprite has 2x the size of the standard retina,
- * simply get the selectors that use the sprite, change the background image,
- * and set it's size to the size of the original sprite.
+ * In case you have and HD sprite, it usually has 2x the size of the standard one.
+ * This media query sets the background image to the HD sprite image while forcing it's
+ * size to the original sprite's measurements
  */
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
@@ -42,7 +42,7 @@
     $sprite-width: image-width($sprite-path);
 
     .bebop {
-        background-image: $sprite-retina;
+        background-image: $sprite-hd;
         background-size: $sprite-width $sprite-height;
     }
 }

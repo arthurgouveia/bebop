@@ -10,7 +10,8 @@ module.exports = function (grunt) {
       js: 'assets/js',
       css: 'assets/css',
       img: 'assets/img',
-      sass: 'assets/sass'
+      sass: 'assets/sass',
+      vendor: 'assets/js/vendor'
     },
 
     pkg: grunt.file.readJSON( 'package.json' ),
@@ -18,7 +19,7 @@ module.exports = function (grunt) {
     clean: {
       dist: 'dist',
       sprite: [
-        'dist/<%= dirs.img %>/sprite/retina',
+        'dist/<%= dirs.img %>/sprite/hd',
         'dist/<%= dirs.img %>/sprite/standard'
       ],
       release: [
@@ -32,6 +33,7 @@ module.exports = function (grunt) {
       dist: {
         src: [
           'src/<%= dirs.js %>/plugins.js',
+          /* add here any plugins you have added via bower that are not to be included directly on the DOM */
           'src/<%= dirs.js %>/main.js'
         ],
         dest: 'src/<%= dirs.js %>/scripts.js'

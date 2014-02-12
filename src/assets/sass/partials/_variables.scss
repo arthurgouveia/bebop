@@ -2,4 +2,4 @@ $font-size: 16;
 
 // Sprite mappers
 $sprite: sprite-map("sprite/standard/*.png", $layout: "smart");
-$sprite-retina: sprite-map("sprite/retina/*.png", $layout: "smart");
+$sprite-hd: sprite-map("sprite/hd/*.png", $layout: "smart");
