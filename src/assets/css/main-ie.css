@@ -536,7 +536,7 @@ textarea{
  * Here's an example of how to use sprites with Compass and how to use the
  * function to convert to PX to REM with fallbacks
  */
-/* line 19, ../sass/_style.scss */
+/* line 18, ../sass/_style.scss */
 .bebop{
   text-indent:-119988px;
   overflow:hidden;
@@ -558,7 +558,7 @@ textarea{
  * size to the original sprite's measurements
  */
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
-  /* line 44, ../sass/_style.scss */
+  /* line 43, ../sass/_style.scss */
   .bebop{
     background-image:url('../img/sprite/hd-sa81efa8ffa.png');
     background-size:277px 356px;
@@ -640,22 +640,11 @@ textarea{
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 35em){
-  /* Style adjustments for viewports that meet the condition */
-}
-@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
-  /* Style adjustments for high resolution devices */
-}
-/* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print{
-  /* line 97, ../sass/partials/h5bp/_helpers.scss */
+  /* line 80, ../sass/partials/h5bp/_helpers.scss */
   *{
     background:transparent !important;
     color:#000 !important;
@@ -664,18 +653,18 @@ textarea{
     text-shadow:none !important;
   }
 
-  /* line 105, ../sass/partials/h5bp/_helpers.scss */
+  /* line 88, ../sass/partials/h5bp/_helpers.scss */
   a,
   a:visited{
     text-decoration:underline;
   }
 
-  /* line 109, ../sass/partials/h5bp/_helpers.scss */
+  /* line 92, ../sass/partials/h5bp/_helpers.scss */
   a[href]:after{
     content:" (" attr(href) ")";
   }
 
-  /* line 113, ../sass/partials/h5bp/_helpers.scss */
+  /* line 96, ../sass/partials/h5bp/_helpers.scss */
   abbr[title]:after{
     content:" (" attr(title) ")";
   }
@@ -683,37 +672,37 @@ textarea{
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 122, ../sass/partials/h5bp/_helpers.scss */
+  /* line 105, ../sass/partials/h5bp/_helpers.scss */
   a[href^="javascript:"]:after,
   a[href^="#"]:after{
     content:"";
   }
 
-  /* line 127, ../sass/partials/h5bp/_helpers.scss */
+  /* line 110, ../sass/partials/h5bp/_helpers.scss */
   pre,
   blockquote{
     border:1px solid #999;
     page-break-inside:avoid;
   }
 
-  /* line 132, ../sass/partials/h5bp/_helpers.scss */
+  /* line 115, ../sass/partials/h5bp/_helpers.scss */
   thead{
     display:table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 137, ../sass/partials/h5bp/_helpers.scss */
+  /* line 120, ../sass/partials/h5bp/_helpers.scss */
   tr,
   img{
     page-break-inside:avoid;
   }
 
-  /* line 141, ../sass/partials/h5bp/_helpers.scss */
+  /* line 124, ../sass/partials/h5bp/_helpers.scss */
   img{
     max-width:100% !important;
   }
 
-  /* line 147, ../sass/partials/h5bp/_helpers.scss */
+  /* line 130, ../sass/partials/h5bp/_helpers.scss */
   p,
   h2,
   h3{
@@ -721,7 +710,7 @@ textarea{
     widows:3;
   }
 
-  /* line 153, ../sass/partials/h5bp/_helpers.scss */
+  /* line 136, ../sass/partials/h5bp/_helpers.scss */
   h2,
   h3{
     page-break-after:avoid;
