@@ -558,7 +558,7 @@ textarea{
  * size to the original sprite's measurements
  */
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
-  /* line 43, ../sass/_style.scss */
+  /* line 39, ../sass/_style.scss */
   .bebop{
     background-image:url('../img/sprite/hd-sa81efa8ffa.png');
     background-size:277px 356px;

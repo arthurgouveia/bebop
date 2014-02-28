@@ -36,13 +36,9 @@
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
 
-    $sprite-path: sprite-path($sprite-hd);
-    $sprite-height: image-height($sprite-path);
-    $sprite-width: image-width($sprite-path);
-
     .bebop {
         background-image: $sprite-hd;
-        background-size: $sprite-width/2 $sprite-height/2;
+        background-size: image-width(sprite-path($sprite-hd))/2 image-height(sprite-path($sprite-hd))/2;
     }
 }
 
