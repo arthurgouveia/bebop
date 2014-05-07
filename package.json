@@ -1,6 +1,6 @@
 {
   "name": "bebop",
-  "version": "0.1.8",
+  "version": "0.1.8.4",
   "title": "Bebop",
   "description": "Bebop is a HTML5 and CSS3 boilerplate built on top of H5B with the aid of Compass, Grunt and Bower to kickstart and optimize the dev flow of simple websites and apps.",
   "keywords": [
@@ -28,18 +28,18 @@
     }
   ],
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-uglify": "~0.3.2",
-    "grunt-contrib-compass": "~0.7.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-connect": "~0.6.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-jshint": "~0.8.0",
+    "grunt": "~0.4.4",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
     "grunt-imageoptim": "~1.4.1",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-imagemin": "~0.5.0",
-    "load-grunt-tasks": "~0.2.1",
+    "grunt-contrib-imagemin": "~0.7.0",
+    "load-grunt-tasks": "~0.4.0",
     "grunt-csscomb": "~2.0.1"
   }
 }
