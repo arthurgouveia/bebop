@@ -89,15 +89,26 @@ module.exports = function (grunt) {
       }
     },
 
+    scsslint: {
+      files: [
+        'src/<%= dirs.sass %>/partials/**/*',
+        'src/<%= dirs.sass %>/*.scss'
+      ],
+      options: {
+        config: '.scss-lint.yml'
+      }
+    },
+
     watch: {
       options: {
         livereload: true
       },
       sass: {
-        files: 'src/assets/sass/**/*',
+        files: 'src/<%= dirs.sass %>/**/*',
         tasks: [
           'compass:dev',
-          'csscomb:dev'
+          'csscomb:dev',
+          'scsslint'
         ]
       },
       js: {

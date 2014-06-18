@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jquery": "~1.11.0",
-    "modernizr": "~2.8.1"
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.2"
   }
 }

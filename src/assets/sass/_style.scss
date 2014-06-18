@@ -1,20 +1,16 @@
-@import 'compass';
-@import 'partials/normalize';
-@import 'partials/h5bp/base';
+@import 'layout/base';
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+// Author's custom styles
 
 *,
 *:before,
 *:after {
     @include box-sizing(border-box);
 }
-/*
- * Here's an example of how to use sprites with Compass and how to use the
- * function to convert to PX to REM with fallbacks
- */
+
+// Here's an example of how to use sprites with Compass and how to use the
+// function to convert to PX to REM with fallbacks
+
 .bebop {
     @include hide-text(left);
     @include sprite($sprite, bebop, true); // This will include the bg position and, if true is passed, height + width
@@ -26,11 +22,10 @@
     background-image: $sprite;
 }
 
-/*
- * In case you have and HD sprite, it usually has 2x the size of the standard one.
- * This media query sets the background image to the HD sprite image while forcing it's
- * size to the original sprite's measurements
- */
+// In case you have and HD sprite, it usually has 2x the size of the standard one.
+// This media query sets the background image to the HD sprite image while forcing it's
+// size to the original sprite's measurements
+
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
@@ -42,4 +37,4 @@
     }
 }
 
-@import 'partials/h5bp/helpers';
+@import 'vendor/h5bp/helpers';
