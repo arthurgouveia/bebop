@@ -1,11 +1,12 @@
 {
   "name": "bebop",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Bebop is a HTML5 and CSS3 boilerplate built on top of H5B with the aid of Compass and Grunt to kickstart and optimize the dev flow of simple websites and apps.",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "jquery": "~1.11.1",
-    "modernizr": "~2.8.2"
+    "modernizr": "~2.8.3",
+    "modernizer": "~2.8.2"
   }
 }
