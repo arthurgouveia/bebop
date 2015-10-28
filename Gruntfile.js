@@ -32,9 +32,8 @@ module.exports = function (grunt) {
     concat: {
       dist: {
         src: [
-          'src/<%= dirs.js %>/plugins.js',
-          /* add here any plugins you have added via bower that are not to be included directly on the DOM */
-          'src/<%= dirs.js %>/main.js'
+          'src/<%= dirs.js %>/**/*.js',
+          '!src/<%= dirs.js %>/scripts.js'
         ],
         dest: 'src/<%= dirs.js %>/scripts.js'
       }
@@ -113,8 +112,8 @@ module.exports = function (grunt) {
       },
       js: {
         files: [
-          'src/<%= dirs.js %>/plugins.js',
-          'src/<%= dirs.js %>/main.js',
+          'src/<%= dirs.js %>/**/*.js',
+          '!src/<%= dirs.js %>/scripts.js'
         ],
         tasks: [
           'concat',
@@ -152,8 +151,8 @@ module.exports = function (grunt) {
         }
       },
       beforeconcat: [
-        'src/<%= dirs.js %>/plugins.js',
-        'src/<%= dirs.js %>/main.js',
+        'src/<%= dirs.js %>/**/*.js',
+        '!src/<%= dirs.js %>/scripts.js'
       ],
       afterconcat: ['src/<%= dirs.js %>/scripts.js']
     },
