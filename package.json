@@ -16,7 +16,11 @@
   ],
   "author": "Arthur Gouveia <arthur.gouveia@gmail.com>",
   "homepage": "https://github.com/arthurgouveia/bebop",
-  "main": "Gruntfile.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "postinstall": "bower install"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/arthurgouveia/bebop.git"
@@ -27,6 +31,10 @@
       "url": "https://raw.github.com/arthurgouveia/bebop/master/LICENSE"
     }
   ],
+  "dependencies": {
+    "bower": "^1.6.5",
+    "express": "^4.13.3"
+  },
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-uglify": "~0.5.0",
